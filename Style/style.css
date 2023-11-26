@@ -885,15 +885,9 @@ button:hover {
 /* responsive */
 @media screen and (max-width: 760px) {
     .ihkam_header2, .ihkam_main {
-        width: 100%;
-        max-width: 4120px;
+        width: 100px;
+        max-width: 650px;
         height: auto;
-    }
-
-    .ihkam_container {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
     }
 
     .ihkam_main {
@@ -950,22 +944,39 @@ button:hover {
 
     .ihkam-box {
         width: 100%;
-        max-width: 440px;
+        max-width: 420px;
         height: auto;
-        grid-template-columns: repeat(2, 210px);
+        grid-template-columns: repeat(2, 180px);
         grid-gap: 30px;
+    }
+
+    .ihkam-card, .ihkam-card2 {
+        width: 180px;
+        height: 220px;
+    }
+
+
+    .ihkam-details, .ihkam-details2 {
+        font-size: 13px;
+        font-weight: 300px;
+        top: 130px;
     }
 
     .ihkam-lcbox {
         display: inline-grid;
         justify-content: space-evenly;
         width: 100%;
-        max-width: 654px;
+        max-width: 470px;
         height: auto;
         grid-template-columns: repeat(2, 240px);
         row-gap: 65px;
         column-gap: 5px;
         text-align: center;
+    }
+
+    .ihkam-lccard, .ihkam-lccard2, .ihkam-lccard3 {
+        width: 240px;
+        height: 200px;
     }
     
     .ihkam-lcdetails img {
@@ -1036,18 +1047,3 @@ button:hover {
         top: 35px;
     }
 }
-
-/* @media screen and (max-width: 560px) {
-    .ihkam-box {
-        width: 100%;
-        max-width: 500px;
-        height: auto;
-        grid-template-columns: repeat(2, 170px);
-        grid-gap: 10px;
-    }
-
-    .ihkam-card, .ihkam-card2, .ihkam-imgBx, .ihkam-imgBx2 img {
-        width: 150px;
-        height: 180px;
-    }
-} */
