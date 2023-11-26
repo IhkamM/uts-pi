@@ -912,7 +912,7 @@ button:hover {
 
     .ihkam-box {
         width: 100%;
-        max-width: 430px;
+        max-width: 654px;
         height: auto;
         grid-template-columns: repeat(2, 210px);
         grid-gap: 20px;
@@ -922,7 +922,7 @@ button:hover {
         display: inline-grid;
         justify-content: space-evenly;
         width: 100%;
-        max-width: 445px;
+        max-width: 654px;
         height: auto;
         grid-template-columns: repeat(2, 240px);
         row-gap: 65px;
@@ -938,7 +938,7 @@ button:hover {
 
     .ihkam_footer {
         width: 100%;
-        max-width: 650px;
+        max-width: 654px;
         height: auto;
     }
     .ihkam_icon {
@@ -950,7 +950,7 @@ button:hover {
 
     .ihkam-rbox {
         width: 100%;
-        max-width: 450px;
+        max-width: 6540px;
         height: auto;
         grid-template-columns: repeat(1, 300px);
         grid-gap: 20px;
@@ -959,7 +959,7 @@ button:hover {
     .ihkam-abox {
         display: grid;
         width: 100%;
-        max-width: 500px;
+        max-width: 654px;
         height: auto;
         grid-template-columns: repeat(1, 100px);
         grid-gap: 20px;
@@ -967,14 +967,14 @@ button:hover {
 
     .ihkam-dbox {
         width: 100%;
-        max-width: 410px;
+        max-width: 654px;
         height: auto;
         grid-template-columns: repeat(1, 440px);
     }
 
     .ihkam-desc, .ihkam-desc2 {
         width: 100%;
-        max-width: 450px;
+        max-width: 654px;
         height: auto;
     }
 
