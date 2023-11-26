@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Honkai Star Rail</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="../img/Stellar_Jade.ico">
+        <link rel="stylesheet" href="../Style/style.css">
+        <link rel="stylesheet" href="../Style/navbar.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <!-- navbar -->
+        <header class="ihkam_header">
+            <a href="../index.html" class="ihkam_name">StarRail<span>Lab</span></a>
+
+            <input type="checkbox" id="ihkam_check">
+
+            <label for="ihkam_check" class="ihkam_menu">
+                <i class="bx bx-menu " id="ihkam_icon-menu"></i>
+                <i class="bx bx-x" id="ihkam_close-menu"></i>
+            </label>
+
+            <nav class="ihkam_navbar">
+                <a href="../index.html">Home</a>
+                <a href="character.html">Character</a>
+                <a href="lightcone.html">Light Cone</a>
+                <a href="relic.html">Relic</a>
+                <a href="aeon.html">Aeon</a>
+                <a href="guide.html">Guide</a>
+                <a href="hubungi.html">Hubungi</a>
+            </nav>
+        </header>
+
+        <!-- header2 -->
+        <div class="ihkam_header2">
+            <h2>Light <span>Cone</span></h2>
+        </div><hr />
+
+        <!-- main -->
+        <main class="ihkam_container">
+            <div class="ihkam_main">
+                <h1>Light Cone</h1><br />
+
+                <div>
+                    <p><b>Light Cones</b> adalah item yang dapat digunakan oleh karakter untuk meningkatkan Base HP, Base ATK, dan Base DEF serta memberikan kemampuan pasif kepada karakter dengan <span><b><i>Path</i></b></span> yang cocok dengan <span><b><i>Light Cone</i></b></span>. Semua <span><b><i>Light Cone</i></b></span> memiliki tingkat kelangkaan yang berkisar antara 3-Star hingga 5-Star, dan <span><b><i>Light Cone</i></b></span> dengan tingkat kelangkaan yang lebih tinggi memiliki statistik dasar yang lebih tinggi.</p><br />
+                    <p><span><b><i>Light Cones</i></b></span> adalah teknologi <span>Garden of Recollection</span>. Mereka berisi kenangan satu orang tertentu. Oleh karena itu, setiap <span><b><i>Light Cone</i></b></span> yang unik pernah menjadi milik orang tertentu. Cara mendapatkan <span><b><i>Light Cone</i></b></span> termasuk, namun tidak terbatas pada, menyelesaikan misi, menyelesaikan pencapaian hadiah, membuka peti, dan <span><b>Warp</b></span>.</p>
+                </div>
+                <br />
+                <hr />
+
+                <!-- Element Selector -->
+                <div class="ihkam_header3">
+                    <div id="ihkam-BtnContainer">
+                        <div class="ihkam-btn ihkam-active" onclick="filterSelection('all')"><img style=" width: 80px; height: 80px;" src="../img/Stellar_Jade.ico" alt="jade"></div>
+                        <div class="ihkam-btn" onclick="filterSelection('abundance')"><img style=" width: 80px; height: 80px;" src="../img/Path/The-Abundance.png" alt="abundance"></div>
+                        <div class="ihkam-btn" onclick="filterSelection('destruction')"><img style=" width: 80px; height: 80px;" src="../img/Path/The-Destruction.png" alt="destruction"></div>
+                        <div class="ihkam-btn" onclick="filterSelection('erudition')"><img style=" width: 80px; height: 80px;" src="../img/Path/The-Erudition.png" alt="erudition"></div>
+                        <div class="ihkam-btn" onclick="filterSelection('harmony')"><img style=" width: 80px; height: 80px;" src="../img/Path/The-Harmony.png" alt="harmony"></div>
+                        <div class="ihkam-btn" onclick="filterSelection('hunt')"><img style=" width: 80px; height: 80px;" src="../img/Path/The-Hunt.png" alt="hunt"></div>
+                        <div class="ihkam-btn" onclick="filterSelection('nihility')"><img style=" width: 80px; height: 80px;" src="../img/Path/The-Nihility.png" alt="nihility"></div>
+                        <div class="ihkam-btn" onclick="filterSelection('preservation')"><img style=" width: 80px; height: 80px;" src="../img/Path/The-Preservation.png" alt="preservation"></div>
+                    </div>
+                </div>
+                <br />
+                <br />
+                <br />
+
+                <!-- Light Cone list -->
+                <div class="ihkam-lcbox">
+                    <!-- 5-star -->
+                    <div class="ihkam-lccolumn ihkam-lccard abundance">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/fright.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Abundance.png" alt="">
+                            <h2>Night of Fright</h2><span>★★★★★</span>
+                            <p>Increases the wearer's Energy Regeneration Rate by 12%. When any ally uses their Ultimate, the wearer restores HP for the ally currently with the lowest HP percentage by an amount equal to 10% of the healed ally's Max HP. When the wearer provides healing for an ally, increases the healed ally's ATK by 2.4%. This effect can stack up to 5 times and lasts for 2 turn(s).</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard destruction">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/ownsword.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Destruction.png" alt="">
+                            <h2>I Shall Be My Own Sword</h2><span>★★★★★</span>
+                            <p>Increases the wearer's CRIT DMG by 20%. When an ally (excluding the wearer) gets attacked or loses HP, the wearer gains 1 stack of Eclipse, up to a max of 3 stack(s). Each stack of Eclipse increases the DMG of the wearer's next attack by 14%. When 3 stack(s) are reached, additionally enables that attack to ignore 12% of the enemy's DEF. This effect will be removed after the wearer uses an attack.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard erudition">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/milkyway.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Erudition.png" alt="">
+                            <h2>Night on the Milky Way</h2><span>★★★★★</span>
+                            <p>For every enemy on the field, increases the wearer's ATK by 9%, up to 5 stacks. When an enemy is inflicted with Weakness Break, the DMG dealt by the wearer increases by 30% for 1 turn.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard erudition">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/forevercerished.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Erudition.png" alt="">
+                            <h2>An Instance Forever Cherished</h2><span>★★★★★</span>
+                            <p>N/A</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard hunt">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/thenight.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Hunt.png" alt="">
+                            <h2>In the Night</h2><span>★★★★★</span>
+                            <p>Increases the wearer's CRIT Rate by 18%. While the wearer is in battle, for every 10 SPD that exceeds 100, the DMG of the wearer's Basic ATK and Skill is increased by 6% and the CRIT DMG of their Ultimate is increased by 12%. This effect can stack up to 6 time(s).</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard destruction">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/something.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Destruction.png" alt="">
+                            <h2>Something Irreplaceable</h2><span>★★★★★</span>
+                            <p>Increases the wearer's ATK by 24%. When the wearer defeats an enemy or is hit, immediately restores HP equal to 8% of the wearer's ATK. At the same time, the wearer's DMG is increased by 24% until the end of their next turn. This effect cannot stack and can only trigger 1 time per turn.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard harmony">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/isntover.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Harmony.png" alt="">
+                            <h2>But the Battle Isn't Over</h2><span>★★★★★</span>
+                            <p>Increases the wearer's Energy Regeneration Rate by 10% and regenerates 1 Skill Point when the wearer uses their Ultimate on an ally. This effect can be triggered once after every 2 uses of the wearer's Ultimate. When the wearer uses their Skill, the next ally taking action (except the wearer) deals 30% more DMG for 1 turn(s).</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard nihility">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/theworld.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Nihility.png" alt="">
+                            <h2>In the Name of the World</h2><span>★★★★★</span>
+                            <p>	Increases the wearer's DMG to debuffed enemies by 24%. When the wearer uses their Skill, the Effect Hit Rate for this attack increases by 18%, and ATK increases by 24%.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard preservation">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/victory.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Preservation.png" alt="">
+                            <h2>Moment of Victory</h2><span>★★★★★</span>
+                            <p>Increases the wearer's DEF by 24% and Effect Hit Rate by 24%. Increases the chance for the wearer to be attacked by enemies. When the wearer is attacked, increase their DEF by an extra 24% until the end of the wearer's turn.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard erudition">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/beforedawn.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Erudition.png" alt="">
+                            <h2>Before Dawn</h2><span>★★★★★</span>
+                            <p>Increases the wearer's CRIT DMG by 36%. Increases the wearer's Skill and Ultimate DMG by 18%. After the wearer uses their Skill or Ultimate, they gain Somnus Corpus. Upon triggering a follow-up attack, Somnus Corpus will be consumed and the follow-up attack DMG increases by 48%.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard hunt">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/thedead.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Hunt.png" alt="">
+                            <h2>Sleep Like the Dead</h2><span>★★★★★</span>
+                            <p>Increases the wearer's CRIT DMG by 30%. When the wearer's Basic ATK or Skill does not result in a CRIT Hit, increases their CRIT Rate by 36% for 1 turn(s). This effect can only trigger once every 3 turn(s).x</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard abundance">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/noone.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Abundance.png" alt="">
+                            <h2>Time Waits for No One	</h2><span>★★★★★</span>
+                            <p>Increases the wearer's Max HP by 18% and Outgoing Healing by 12%. When the wearer heals allies, record the amount of Outgoing Healing. When any ally launches an attack, a random attacked enemy takes Additional DMG equal to 36% of the recorded Outgoing Healing value. The type of this Additional DMG is of the same Type as the wearer's. This Additional DMG is not affected by other buffs, and can only occur 1 time per turn.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard destruction">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/anaeon.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Destruction.png" alt="">
+                            <h2>On the Fall of an Aeon</h2><span>★★★★★</span>
+                            <p>Whenever the wearer attacks, their ATK is increased by 8% in this battle. This effect can stack up to 4 time(s). When the wearer inflicts Weakness Break on enemies, the wearer's DMG increases by 12% for 2 turn(s).</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard hunt">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/stellarsea.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Hunt.png" alt="">
+                            <h2>Cruising in the Stellar Sea</h2><span>★★★★★</span>
+                            <p>Increases the wearer's CRIT rate by 8%, and increases their CRIT rate against enemies with HP less than or equal to 50% by an extra 8%. When the wearer defeats an enemy, their ATK is increased by 20% for 2 turn(s).</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard preservation">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/memories.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Preservation.png" alt="">
+                            <h2>Texture of Memories</h2><span>★★★★★</span>
+                            <p>Increases the wearer's Effect RES by 8%. If the wearer is attacked and has no Shield, they gain a Shield equal to 16% of their Max HP for 2 turn(s). This effect can only be triggered once every 3 turn(s). If the wearer has a Shield when attacked, the DMG they receive decreases by 12%.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard nihility">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/incessant.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Nihility.png" alt="">
+                            <h2>Incessant Rain</h2><span>★★★★★</span>
+                            <p>Increases the wearer's Effect Hit Rate by 24%. When the wearer deals DMG to an enemy that currently has 3 or more debuffs, increases the wearer's CRIT Rate by 12%. After the wearer uses their Basic ATK, Skill, or Ultimate, there is a 100% base chance to implant Aether Code on a random hit target that does not yet have it. Targets with Aether Code receive 12% increased DMG for 1 turn.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard abundance">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/thecoffin.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Abundance.png" alt="">
+                            <h2>Echoes of the Coffin</h2><span>★★★★★</span>
+                            <p>Increases the wearer's ATK by 24%. After the wearer uses an attack, for each different enemy target the wearer hits, regenerates 3 Energy. Each attack can regenerate Energy up to 3 time(s) this way. After the wearer uses their Ultimate, all allies gain 12 SPD for 1 turn.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard destruction">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/side.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Destruction.png" alt="">
+                            <h2>The Unreachable Side</h2><span>★★★★★</span>
+                            <p>Increases the wearer's CRIT rate by 18% and increases their Max HP by 18%. When the wearer is attacked or consumes their own HP, their DMG increases by 24%. This effect is removed after the wearer uses an attack.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard hunt">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/blissful.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Hunt.png" alt="">
+                            <h2>Worrisome, Blissful</h2><span>★★★★★</span>
+                            <p>Increase the wearer's CRIT Rate by 18% and their follow-up attacks' DMG by 30%. After the wearer uses a follow-up attack, apply the Tame state to the target, stacking up to 2 stacks. When allies hit enemy targets under the Tame state, every Tame stack increases the CRIT DMG dealt by 12%.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard nihility">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/solitary.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Nihility.png" alt="">
+                            <h2>Solitary Healing</h2><span>★★★★★</span>
+                            <p>Increases the wearer's Break Effect by 20%. When the wearer uses their Ultimate, increases DoT dealt by the wearer by 24%, lasting for 2 turn(s). When a target enemy suffering from DoT imposed by the wearer is defeated, regenerates 4 Energy for the wearer.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard preservation">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/shuthereyes.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Preservation.png" alt="">
+                            <h2>She Already Shut Her Eyes</h2><span>★★★★★</span>
+                            <p>Increases the wearer's Max HP by 24% and Energy Regeneration Rate by 12%. When the wearer's HP is reduced, all allies' DMG dealt increases by 9%, lasting for 2 turn(s).
+                                At the start of every wave, restores HP to all allies by an amount equal to 80% of their respective lost HP.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard destruction">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/thesun.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Destruction.png" alt="">
+                            <h2>Brighter Than the Sun</h2><span>★★★★★</span>
+                            <p>Increases the wearer's CRIT Rate by 18%. When the wearer uses their Basic ATK, they will gain 1 stack of Dragon's Call, lasting for 2 turns. Each stack of Dragon's Call increases the wearer's ATK by 18% and Energy Regeneration Rate by 6%. Dragon's Call can be stacked up to 2 times.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard nihility">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/youneed.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Nihility.png" alt="">
+                            <h2>Patience Is All You Need</h2><span>★★★★★</span>
+                            <p>Increases DMG dealt by the wearer by 24%. After every attack launched by wearer, their SPD increases by 4.8%, stacking up to 3 times.
+                                If the wearer hits an enemy target that is not afflicted by Erode, there is a 100% base chance to inflict Erode to the target. Enemies afflicted with Erode are also considered to be Shocked and will receive Lightning DoT at the start of each turn equal to 60% of the wearer's ATK, lasting for 1 turn(s).</p>
+                        </div>
+                    </div>
+
+                    <!-- 4-star -->
+                    <div class="ihkam-lccolumn ihkam-lccard2 abundance">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/overhere.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Abundance.png" alt="">
+                            <h2>Hey, Over Here</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>Increases the wearer's Max HP by 8%. When the wearer uses their Skill, increases Outgoing Healing by 16%, lasting for 2 turn(s).</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 nihility">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/beforetutor.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Nihility.png" alt="">
+                            <h2>Before the Tutorial Mission Starts</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>Increases the wearer's Effect Hit Rate by 20%. When the wearer attacks DEF-reduced enemies, regenerates 4 Energy.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 harmony">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/dance.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Harmony.png" alt="">
+                            <h2>Dance! Dance! Dance!</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>When the wearer uses their Ultimate, all allies' actions are Advanced Forward by 16%.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 preservation">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/choice.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Preservation.png" alt="">
+                            <h2>Landau's Choice</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>The wearer is more likely to be attacked, and DMG taken is reduced by 16%.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 hunt">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/remains.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Hunt.png" alt="">
+                            <h2>Only Silence Remains</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>Increases the wearer's ATK by 16%. If there are 2 or fewer enemies on the field, increases wearer's CRIT Rate by 12%.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 nihility">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/theprey.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Nihility.png" alt="">
+                            <h2>Eyes of the Prey</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>Increases the wearer's Effect Hit Rate by 20% and increases DoT by 24%.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 abundance">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/post-op.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Abundance.png" alt="">
+                            <h2>Post-Op Conversation</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>Increases the wearer's Energy Regeneration Rate by 8% and increases Outgoing Healing when they use their Ultimate by 12%.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 nihility">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/sleepwell.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Nihility.png" alt="">
+                            <h2>Good Night and Sleep Well</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>For every debuff the target enemy has, the DMG dealt by the wearer increases by 12%, stacking up to 3 time(s). This effect also applies to DoT.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 preservation">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/newlife.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Preservation.png" alt="">
+                            <h2>Day One of My New Life</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>Increases the wearer's DEF by 16%. After entering battle, increases All-Type RES of all allies by 8%. Effects of the same type cannot stack.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 harmony">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/thepast.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Harmony.png" alt="">
+                            <h2>Memories of the Past</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>Increases the wearer's Break Effect by 28%. When the wearer attacks, additionally regenerates 4 Energy. This effect cannot be repeatedly triggered in a single turn.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 destruction">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/welcome.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Destruction.png" alt="">
+                            <h2>The Moles Welcome You</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>When the wearer uses Basic ATK, Skill, or Ultimate to attack enemies, the wearer gains one stack of Mischievous. Each stack increases the wearer's ATK by 12%.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 erudition">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/theself.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Erudition.png" alt="">
+                            <h2>The Birth of the Self</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>Increases DMG dealt by the wearer's follow-up attacks by 24%. If the current HP of the target enemy is below or equal to 50%, increases DMG dealt by follow-up attacks by an extra 24%.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 abundance">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/feeling.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Abundance.png" alt="">
+                            <h2>Shared Feeling</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>Increases the wearer's Outgoing Healing by 10%. When using Skill, regenerates 2 Energy for all allies.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 hunt">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/swordplay.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Hunt.png" alt="">
+                            <h2>Swordplay</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>	For each time the wearer hits the same target, DMG dealt increases by 8%, stacking up to 5 time(s). This effect will be dispelled when the wearer changes targets.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 harmony">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/planetary.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Harmony.png" alt="">
+                            <h2>Planetary Rendezvous</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>After entering battle, if an ally deals the same DMG Type as the wearer, DMG dealt increases by 12%.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 destruction">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/vow.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Destruction.png" alt="">
+                            <h2>A Secret Vow</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>Increases DMG dealt by the wearer by 20%. The wearer also deals an extra 20% of DMG to enemies whose current HP percentage is equal to or higher than the wearer's current HP percentage.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 erudition">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/clamor.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Erudition.png" alt="">
+                            <h2>Make the World Clamor</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>The wearer regenerates 20 Energy immediately upon entering battle, and increases Ultimate DMG by 32%.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 destruction">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/time!.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Destruction.png" alt="">
+                            <h2>Woof! Walk Time!</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>Increases the wearer's ATK by 10%, and increases their DMG to enemies afflicted with Burn or Bleed by 16%. This also applies to DoT.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 erudition">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/breakfast.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Erudition.png" alt="">
+                            <h2>The Seriousness of Breakfast</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>Increases the wearer's DMG by 12%. For every enemy defeated by the wearer, the wearer's ATK increases by 4%, stacking up to 3 time(s).</p>
+                        </div>
+                    </div>
+
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 abundance">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/coldnight.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Abundance.png" alt="">
+                            <h2>Warmth Shortens Cold Nights</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>Increases the wearer's Max HP by 16%. When using Basic ATK or Skill, restores all allies' HP by an amount equal to 2% of their respective Max HP.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 nihility">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/meetagain.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Nihility.png" alt="">
+                            <h2>We Will Meet Again</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>After the wearer uses Basic ATK or Skill, deals Additional DMG equal to 48% of the wearer's ATK to a random enemy that has been attacked.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 preservation">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/me!.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Preservation.png" alt="">
+                            <h2>This Is Me!</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>Increases the wearer's DEF by 16%. Increases the DMG of the wearer when they use their Ultimate by 60% of the wearer's DEF. This effect only applies 1 time per enemy target during each use of the wearer's Ultimate.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 hunt">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/todarkness.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Hunt.png" alt="">
+                            <h2>Return to Darkness</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>Increases the wearer's CRIT Rate by 12%. After a CRIT Hit, there is a 16% fixed chance to dispel 1 buff on the target enemy. This effect can only trigger 1 time per attack.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 harmony">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/theclouds.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Harmony.png" alt="">
+                            <h2>Carve the Moon, Weave the Clouds</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>At the start of the battle and whenever the wearer's turn begins, one of the following effects is applied randomly: All allies' ATK increases by 10%, all allies' CRIT DMG increases by 12%, or all allies' Energy Regeneration Rate increases by 6%. The applied effect cannot be identical to the last effect applied, and will replace the previous effect. The applied effect will be removed when the wearer has been knocked down. Effects of the similar type cannot be stacked.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 destruction">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/torun.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Destruction.png" alt="">
+                            <h2>Nowhere to Run</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>Increases the wearer's ATK by 24%. Whenever the wearer defeats an enemy, they restore HP equal to 12% of their ATK.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 erudition">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/peacefulday.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Erudition.png" alt="">
+                            <h2>Today Is Another Peaceful Day</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>After entering battle, increases the wearer's DMG based on their Max Energy. DMG increases by 0.2% per point of Energy, up to 160 Energy.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 abundance">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/timing.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Abundance.png" alt="">
+                            <h2>Perfect Timing</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>Increases the wearer's Effect RES by 16% and increases Outgoing Healing by an amount that is equal to 33% of Effect RES. Outgoing Healing can be increased this way by up to 15%.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 nihility">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/sweat.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Nihility.png" alt="">
+                            <h2>Resolution Shines As Pearls of Sweat</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>When the wearer hits an enemy and if the hit enemy is not already Ensnared, then there is a 60% base chance to Ensnare the hit enemy. Ensnared enemies' DEF decreases by 12% for 1 turn(s).</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 preservation">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/market.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Preservation.png" alt="">
+                            <h2>Trend of the Universal Market</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>Increases the wearer's DEF by 16%. When the wearer is attacked, there is a 100% base chance to Burn the enemy. For each turn, the wearer deals DoT that is equal to 40% of the wearer's DEF for 2 turn(s).</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 hunt">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/formore.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Hunt.png" alt="">
+                            <h2>Subscribe for More!</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>	Increases the DMG of the wearer's Basic ATK and Skill by 24%. This effect increases by an extra 24% when the wearer's current Energy reaches its max level.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 destruction">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/bluesky.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Destruction.png" alt="">
+                            <h2>Under the Blue Sky</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>Increases the wearer's ATK by 16%. When the wearer defeats an enemy, the wearer's CRIT Rate increases by 12% for 3 turn(s).</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 erudition">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/repose.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Erudition.png" alt="">
+                            <h2>Geniuses' Repose</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>Increases the wearer's ATK by 16%. When the wearer defeats an enemy, the wearer's CRIT DMG increases by 24% for 3 turn(s).</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 abundance">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/proquo.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Abundance.png" alt="">
+                            <h2>Quid Pro Quo</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>At the start of the wearer's turn, regenerates 8 Energy for a randomly chosen ally (excluding the wearer) whose current Energy is lower than 50%.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 nihility">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/fermata.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Nihility.png" alt="">
+                            <h2>Fermata</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>Increases the Break Effect dealt by the wearer by 16%, and increases their DMG to enemies afflicted with Shock or Wind Shear by 16%. This also applies to DoT.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 preservation">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/wildfire.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Preservation.png" alt="">
+                            <h2>We Are Wildfire</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>At the start of the battle, the DMG dealt to all allies decreases by 8% for 5 turn(s). At the same time, immediately restores HP to all allies equal to 30% of the respective HP difference between the characters' Max HP and current HP.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 harmony">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/pastfuture.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Harmony.png" alt="">
+                            <h2>Past and Future</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>When the wearer uses their Skill, the next ally taking action (except the wearer) deals 16% increased DMG for 1 turn(s).</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard2 hunt">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/riverflow.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Hunt.png" alt="">
+                            <h2>River Flows in Spring</h2><span style="color: #FF00FF;">★★★★</span>
+                            <p>After entering battle, increases the wearer's SPD by 8% and DMG by 12%. When the wearer takes DMG, this effect will disappear. This effect will resume after the end of the wearer's next turn.</p>
+                        </div>
+                    </div>
+
+                    <!-- 3-star -->
+                    <div class="ihkam-lccolumn ihkam-lccard3 nihility">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/hidden.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Nihility.png" alt="">
+                            <h2>Hidden Shadow</h2><span style="color: #1E90FF;">★★★</span>
+                            <p>After using Skill, the wearer's next Basic ATK deals Additional DMG equal to 60% of ATK to the target enemy.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard3 harmony">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/mediation.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Harmony.png" alt="">
+                            <h2>Mediation</h2><span style="color: #1E90FF;">★★★</span>
+                            <p>Upon entering battle, increases SPD of all allies by 12 points for 1 turn(s).</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard3 erudition">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/sagacity.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Erudition.png" alt="">
+                            <h2>Sagacity</h2><span style="color: #1E90FF;">★★★</span>
+                            <p>When the wearer uses their Ultimate, increases ATK by 24% for 2 turn(s).</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard3 destruction">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/demise.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Destruction.png" alt="">
+                            <h2>Mutual Demise</h2><span style="color: #1E90FF;">★★★</span>
+                            <p>If the wearer's current HP is lower than 80%, CRIT Rate increases by 12%.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard3 hunt">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/adversarial.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Hunt.png" alt="">
+                            <h2>Adversarial</h2><span style="color: #1E90FF;">★★★</span>
+                            <p>When the wearer defeats an enemy, increases SPD by 10% for 2 turn(s).</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard3 nihility">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/loop.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Nihility.png" alt="">
+                            <h2>Loop</h2><span style="color: #1E90FF;">★★★</span>
+                            <p>Increases DMG dealt from its wearer to Slowed enemies by 24%.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard3 erudition">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/databank.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Erudition.png" alt="">
+                            <h2>Data Bank</h2><span style="color: #1E90FF;">★★★</span>
+                            <p>Increases the wearer's Ultimate DMG by 28%.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard3 abundance">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/cornucopia.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Abundance.png" alt="">
+                            <h2>Cornucopia</h2><span style="color: #1E90FF;">★★★</span>
+                            <p>When the wearer uses their Skill or Ultimate, their Outgoing Healing increases by 12%.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard3 destruction">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/collapsingsky.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Destruction.png" alt="">
+                            <h2>Collapsing Sky</h2><span style="color: #1E90FF;">★★★</span>
+                            <p>Increases the wearer's Basic ATK and Skill DMG by 20%.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard3 preservation">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/amber.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Preservation.png" alt="">
+                            <h2>Amber</h2><span style="color: #1E90FF;">★★★</span>
+                            <p>Increases the wearer's DEF by 16%. If the wearer's current HP is lower than 50%, increases their DEF by a further 16%.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard3 nihility">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/void.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Nihility.png" alt="">
+                            <h2>Void</h2><span style="color: #1E90FF;">★★★</span>
+                            <p>At the start of the battle, the wearer's Effect Hit Rate increases by 20% for 3 turn(s).</p>
+                        </div>
+                    </div>
+
+
+                    <div class="ihkam-lccolumn ihkam-lccard3 harmony">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/chorus.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Harmony.png" alt="">
+                            <h2>Chorus</h2><span style="color: #1E90FF;">★★★</span>
+                            <p>After entering battle, increases the ATK of all allies by 8%. Effects of the same type cannot stack.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard3 hunt">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/arrows.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Hunt.png" alt="">
+                            <h2>Arrows</h2><span style="color: #1E90FF;">★★★</span>
+                            <p>At the start of the battle, the wearer's CRIT Rate increases by 12% for 3 turn(s).</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard3 hunt">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/dartingarrow.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Hunt.png" alt="">
+                            <h2>Darting Arrow</h2><span style="color: #1E90FF;">★★★</span>
+                            <p>When the wearer defeats an enemy, increases ATK by 24% for 3 turn(s).</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard3 abundance">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/fruit.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Abundance.png" alt="">
+                            <h2>Fine Fruit</h2><span style="color: #1E90FF;">★★★</span>
+                            <p>At the start of the battle, immediately regenerates 6 Energy for all allies.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard3 destruction">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/home.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Destruction.png" alt="">
+                            <h2>Shattered Home</h2><span style="color: #1E90FF;">★★★</span>
+                            <p>The wearer deals 20% more DMG to enemy targets whose HP percentage is greater than 50%.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard3 preservation">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/defense.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Preservation.png" alt="">
+                            <h2>Defense</h2><span style="color: #1E90FF;">★★★</span>
+                            <p>When the wearer unleashes their Ultimate, they restore HP by 18% of their Max HP.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard3 harmony">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/cogs.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Harmony.png" alt="">
+                            <h2>Meshing Cogs</h2><span style="color: #1E90FF;">★★★</span>
+                            <p>After the wearer uses attacks or gets hit, additionally regenerates 4 Energy. This effect cannot be repeatedly triggered in a single turn.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard3 erudition">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/passkey.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Erudition.png" alt="">
+                            <h2>Passkey</h2><span style="color: #1E90FF;">★★★</span>
+                            <p>After the wearer uses their Skill, additionally regenerates 8 Energy. This effect cannot be repeatedly triggered in a single turn.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard3 preservation">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/pioneering.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Preservation.png" alt="">
+                            <h2>Pioneering</h2><span style="color: #1E90FF;">★★★</span>
+                            <p>When the wearer Breaks an enemy's Weakness, the wearer restores HP by 12% of their Max HP.</p>
+                        </div>
+                    </div>
+
+                    <div class="ihkam-lccolumn ihkam-lccard3 abundance">
+                        <div class="ihkam-lcimgBX">
+                            <img src="../img/Light Cone/multiplication.png" alt="">
+                        </div>
+                        <div class="ihkam-lcdetails">
+                            <img src="../img/Path/The-Abundance.png" alt="">
+                            <h2>Multiplication	</h2><span style="color: #1E90FF;">★★★</span>
+                            <p>After the wearer uses their Basic ATK, their next action will be Advanced Forward by 12%.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <script type="text/javascript" src="../script.js"></script>
+
+        <!-- footer -->
+        <footer>
+            <div class="ihkam_footer">
+                <div class="ihkam_footer-content">
+                    <a href="#" class="ihkam_logo">StarRail<span>Lab</span></a>
+                    <p>"Blindfold your eyes, they say,<br>
+                        that the approaching darkness may strike no fear in you.<br>
+                        Let it not burden your soul, nor numb your stride."<br>
+                    -IX</p>
+    
+                    <div class="ihkam_icon">
+                        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                        <a href="#"><i class="bx bxl-facebook-square"></i></a>
+                        <a href="#"><i class="bx bxl-tiktok"></i></a>
+                        <a href="#"><i class="bx bxl-twitch"></i></a>
+                        <a href="#"><i class="bx bxl-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="ihkam_footer-content">
+                    <h3>Comunity</h3>
+                    <a href="https://www.prydwen.gg/star-rail/"><h4>Prydwen</h4></a>
+                    <a href="https://wiki.hoyolab.com/pc/hsr/home"><h4>HoyoWiki</h4></a>
+                    <a href="https://honkai-star-rail.fandom.com/wiki/Honkai:_Star_Rail_Wiki"><h4>HSR Wiki</h4></a>
+                    <a href="https://genshinlab.com/honkai-star-rail-characters/"><h4>GenshinLab</h4></a>
+                    <a href="https://hsr.honeyhunterworld.com/?lang=ID"><h4>HoneyHunterWorld</h4></a>
+                    <a href="https://www.hoyolab.com/circles/6/42/feed?page_type=42&page_sort=hot"><h4>HoyoLab</h4></a>
+                </div>
+            </div><hr>
+            <div class="ihkam_copyright">
+                <h2>Copyright 2023 © Ihkam Mustaqim | MrkR</h2>
+            </div>
+        </footer>
+    </body>
+</html>

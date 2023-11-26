@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Honkai Star Rail</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="../img/Stellar_Jade.ico">
+        <link rel="stylesheet" href="../Style/style.css">
+        <link rel="stylesheet" href="../Style/navbar.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        
+    </head>
+    <body>
+        <!-- navbar -->
+        <header class="ihkam_header">
+            <a href="../index.html" class="ihkam_name">StarRail<span>Lab</span></a>
+
+            <input type="checkbox" id="ihkam_check">
+
+            <label for="ihkam_check" class="ihkam_menu">
+                <i class="bx bx-menu " id="ihkam_icon-menu"></i>
+                <i class="bx bx-x" id="ihkam_close-menu"></i>
+            </label>
+
+            <nav class="ihkam_navbar">
+                <a href="../index.html">Home</a>
+                <a href="character.html">Character</a>
+                <a href="lightcone.html">Light Cone</a>
+                <a href="relic.html">Relic</a>
+                <a href="aeon.html">Aeon</a>
+                <a href="guide.html">Guide</a>
+                <a href="hubungi.html">Hubungi</a>
+            </nav>
+        </header>
+
+        <!-- header2 -->
+        <div class="ihkam_header2">
+            <h2>Character <span>List</span></h2>
+        </div><hr />
+
+        <!-- main -->
+        <main class="ihkam_container">
+            <div class="ihkam_main">
+                <h1>Character</h1><br />
+
+                <div>
+                    <p><b>Characters</b> adalah unit yang dapat diperoleh di <a href="../index.html"><span><b>Honkai: Star Rail</b></span></a> Mereka datang dalam kualitas yang berbeda, mengikuti <span><b><i>Path</i></b></span>, selaras dengan <span><b><i>Elements</i></b></span> dan dilengkapi dengan <a href="lightcone.html"><span><b><i>Light Cone</i></b></span></a> Setiap <b><i>Character</i></b> memiliki <span><b><i>Element</i></b></span> dan <span><b><i>Path</i></b></span> tersendiri.</p><br />
+                    <p><b>Character Honkai: Star Rail</b> yang paling banyak dapat dimainkan diperoleh melalui sistem Gacha dalam game, yang juga disebut sistem <span>Warp</span>, Karakter utama yang dikenal sebagai <span><b>Trailblazer</b></span> akan menjadi bagian dari roster Anda sejak awal permainan. Mereka bisa laki-laki atau perempuan tergantung pilihan pemain. Ini juga satu-satunya karakter yang tidak tersedia di sistem Warp.
+                    </p>
+                </div>
+                <br />
+                <hr />
+
+                <!-- Element Selector -->
+                <div class="ihkam_header3">
+                    <div id="ihkam-BtnContainer">
+                        <div class="ihkam-btn ihkam-active" onclick="filterSelection('all')"><img style=" width: 80px; height: 80px;" src="../img/Stellar_Jade.ico" alt="jade"></div>
+                        <div class="ihkam-btn" onclick="filterSelection('fire')"><img style=" width: 80px; height: 80px;" src="../img/Elements/Fire.png" alt="fire"></div>
+                        <div class="ihkam-btn" onclick="filterSelection('physical')"><img style=" width: 80px; height: 80px;" src="../img/Elements/Physical.png" alt="physical"></div>
+                        <div class="ihkam-btn" onclick="filterSelection('ice')"><img style=" width: 80px; height: 80px;" src="../img/Elements/Ice.png" alt="ice"></div>
+                        <div class="ihkam-btn" onclick="filterSelection('wind')"><img style=" width: 80px; height: 80px;" src="../img/Elements/Wind.png" alt="wind"></div>
+                        <div class="ihkam-btn" onclick="filterSelection('quantum')"><img style=" width: 80px; height: 80px;" src="../img/Elements/Quantum.png" alt="quantum"></div>
+                        <div class="ihkam-btn" onclick="filterSelection('imaginary')"><img style=" width: 80px; height: 80px;" src="../img/Elements/Imaginary.png" alt="imaginary"></div>
+                        <div class="ihkam-btn" onclick="filterSelection('lightning')"><img style=" width: 80px; height: 80px;" src="../img/Elements/Lightning.png" alt="lightning"></div>
+                    </div>
+                </div>
+
+                <!-- Character List -->
+                <div class="ihkam-box">
+                    <div class="ihkam-column ihkam-card physical">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Physical.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Destruction.png" alt="">
+                            <img src="../img/Character/Trailblazer.png" alt="trailbazer">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Trailblazer</h2><span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card fire">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Fire.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Preservation.png" alt="">
+                            <img src="../img/Character/Trailblazer2.png" alt="trailbazer">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Trailblazer</h2><span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card2 wind">
+                        <div class="ihkam-imgBx2">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Wind.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Hunt.png" alt="">
+                            <img src="../img/Character/Dan heng.png" alt="danheng">
+                        </div>
+                        <div class="ihkam-details2">
+                            <h2>Dan Heng</h2><span style="color: #FF00FF;">★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card2 ice">
+                        <div class="ihkam-imgBx2">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Ice.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Preservation.png" alt="">
+                            <img src="../img/Character/March7.png" alt="march7">
+                        </div>
+                        <div class="ihkam-details2">
+                            <h2>March 7th</h2><span style="color: 	#FF00FF;">★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card imaginary">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Imaginary.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Nihility.png" alt="">
+                            <img src="../img/Character/welt.png" alt="welt">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Welt</h2><span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card fire">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Fire.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Erudition.png" alt="">
+                            <img src="../img/Character/himeko.png" alt="himeko">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Himeko</h2><span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card2 fire">
+                        <div class="ihkam-imgBx2">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Fire.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Harmony.png" alt="">
+                            <img src="../img/Character/asta.png" alt="asta">
+                        </div>
+                        <div class="ihkam-details2">
+                            <h2>Asta</h2><span style="color: #FF00FF;">★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card2 lightning">
+                        <div class="ihkam-imgBx2">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Lightning.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Destruction.png" alt="">
+                            <img src="../img/Character/arlan.png" alt="arlan">
+                        </div>
+                        <div class="ihkam-details2">
+                            <h2>Arlan</h2><span style="color: #FF00FF;">★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card2 ice">
+                        <div class="ihkam-imgBx2">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Ice.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Erudition.png" alt="">
+                            <img src="../img/Character/herta.png" alt="herta">
+                        </div>
+                        <div class="ihkam-details2">
+                            <h2>Herta</h2><span style="color: #FF00FF;">★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card ice">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Ice.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Preservation.png" alt="">
+                            <img src="../img/Character/gepard.png" alt="gepard">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Gepard</h2><span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card2 physical">
+                        <div class="ihkam-imgBx2">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Physical.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Abundance.png" alt="">
+                            <img src="../img/Character/natasha.png" alt="natasha">
+                        </div>
+                        <div class="ihkam-details2">
+                            <h2>Natasha</h2><span style="color: #FF00FF;">★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card2 fire">
+                        <div class="ihkam-imgBx2">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Fire.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Destruction.png" alt="">
+                            <img src="../img/Character/hook.png" alt="hook">
+                        </div>
+                        <div class="ihkam-details2">
+                            <h2>Hook</h2><span style="color: #FF00FF;">★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card wind">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Wind.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Harmony.png" alt="">
+                            <img src="../img/Character/bronya.png" alt="bronya">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Bronya</h2><span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card2 quantum">
+                        <div class="ihkam-imgBx2">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Quantum.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Abundance.png" alt="">
+                            <img src="../img/Character/lynx.png" alt="lynx">
+                        </div>
+                        <div class="ihkam-details2">
+                            <h2>Lynx</h2><span style="color: #FF00FF;">★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card quantum">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Quantum.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Hunt.png" alt="">
+                            <img src="../img/Character/seele.png" alt="seele">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Seele</h2><span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card2 physical">
+                        <div class="ihkam-imgBx2">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Physical.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Nihility.png" alt="">
+                            <img src="../img/Character/luka.png" alt="luka">
+                        </div>
+                        <div class="ihkam-details2">
+                            <h2>Luka</h2><span style="color: #FF00FF;">★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card2  wind">
+                        <div class="ihkam-imgBx2">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Wind.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Nihility.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Nihility.png" alt="">
+                            <img src="../img/Character/sampo.png" alt="sampo">
+                        </div>
+                        <div class="ihkam-details2">
+                            <h2>Sampo</h2><span style="color: #FF00FF;">★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card2 lightning">
+                        <div class="ihkam-imgBx2">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Lightning.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Erudition.png" alt="">
+                            <img src="../img/Character/serval.png" alt="serval">
+                        </div>
+                        <div class="ihkam-details2">
+                            <h2>Serval</h2><span style="color: #FF00FF;">★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card lightning">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Lightning.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Abundance.png" alt="">
+                            <img src="../img/Character/bailu.png" alt="bailu">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Bailu</h2><span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card physical">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Physical.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Destruction.png" alt="">
+                            <img src="../img/Character/clara.png" alt="clara">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Clara</h2><span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card ice">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Ice.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Hunt.png" alt="">
+                            <img src="../img/Character/yanqing.png" alt="yanqing">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Yanqing</h2><span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card lightning">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Lightning.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Nihility.png" alt="">
+                            <img src="../img/Character/kafka.png" alt="kafka">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Kafka</h2><span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card wind">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Wind.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Destruction.png" alt="">
+                            <img src="../img/Character/blade.png" alt="blade">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Blade</h2><span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card quantum">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Quantum.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Nihility.png" alt="">
+                            <img src="../img/Character/silver wolof.png" alt="silverwolf">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Silver Wolf</h2><span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card2 lightning">
+                        <div class="ihkam-imgBx2">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Lightning.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Harmony.png" alt="">
+                            <img src="../img/Character/tingyun.png" alt="tingyun">
+                        </div>
+                        <div class="ihkam-details2">
+                            <h2>Tingyun</h2><span style="color: #FF00FF;">★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card2 physical">
+                        <div class="ihkam-imgBx2">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Physical.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Hunt.png" alt="">
+                            <img src="../img/Character/sushang.png" alt="sushang">
+                        </div>
+                        <div class="ihkam-details2">
+                            <h2>Sushang</h2><span style="color: #FF00FF;">★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card lightning">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Lightning.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Erudition.png" alt="">
+                            <img src="../img/Character/jingyuan.png" alt="jingyuan">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Jing Yuan</h2><span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card ice">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Ice.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Destruction.png" alt="">
+                            <img src="../img/Character/jingliu.png" alt="jingliu">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Jing Liu</h2><span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card imaginary">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Imaginary.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Destruction.png" alt="">
+                            <img src="../img/Character/danil.png" alt="danil">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Dan Heng • Imbibitor Lunae</h2><span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card2 imaginary">
+                        <div class="ihkam-imgBx2">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Imaginary.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Harmony.png" alt="">
+                            <img src="../img/Character/yukong.png" alt="yukong">
+                        </div>
+                        <div class="ihkam-details2">
+                            <h2>Yukong</h2><span style="color: #FF00FF;">★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card2 quantum">
+                        <div class="ihkam-imgBx2">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Quantum.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Erudition.png" alt="">
+                            <img src="../img/Character/qingque.png" alt="qingque">
+                        </div>
+                        <div class="ihkam-details2">
+                            <h2>Qingque</h2><span style="color: #FF00FF;">★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card imaginary">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Imaginary.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Abundance.png" alt="">
+                            <img src="../img/Character/luocha.png" alt="luocha">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Luocha</h2><span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card wind">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Wind.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Abundance.png" alt="">
+                            <img src="../img/Character/huohuo.png" alt="huohuo">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Huohuo</h2><span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card2 physical">
+                        <div class="ihkam-imgBx2">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Physical.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Harmony.png" alt="">
+                            <img src="../img/Character/hanya.png" alt="hanya">
+                        </div>
+                        <div class="ihkam-details2">
+                            <h2>Hanya</h2><span style="color: #FF00FF;">★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card2 fire">
+                        <div class="ihkam-imgBx2">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Fire.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Nihility.png" alt="">
+                            <img src="../img/Character/guinafen.png" alt="guinafen">
+                        </div>
+                        <div class="ihkam-details2">
+                            <h2>Guinafen</h2><span style="color: #FF00FF;">★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card quantum">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Quantum.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Preservation.png" alt="">
+                            <img src="../img/Character/fuxuan.png" alt="fuxuan">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Fu Xuan</h2><span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card2 ice">
+                        <div class="ihkam-imgBx2">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Ice.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Nihility.png" alt="">
+                            <img src="../img/Character/pela.png" alt="pela">
+                        </div>
+                        <div class="ihkam-details2">
+                            <h2>Pela</h2><span style="color: #FF00FF;">★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card fire">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Fire.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Hunt.png" alt="">
+                            <img src="../img/Character/topaz.png" alt="topaz">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Topaz & Numby</h2><span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card2 quantum">
+                        <div class="ihkam-imgBx2">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Quantum.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Destruction.png" alt="">
+                            <img src="../img/Character/xueyi.png" alt="xueyi">
+                        </div>
+                        <div class="ihkam-details2">
+                            <h2>Xueyi</h2><span style="color: #FF00FF;">★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card physical">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Physical.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Erudition.png" alt="">
+                            <img src="../img/Character/argenti.png" alt="argenti">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Argenti</h2><span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card imaginary">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Imaginary.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Hunt.png" alt="">
+                            <img src="../img/Character/drratio.png" alt="drratio">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Dr. Ratio</h2><span>★★★★★</span>
+                        </div>
+                    </div>
+                    <div class="ihkam-column ihkam-card ice">
+                        <div class="ihkam-imgBx">
+                            <img style="width: 75px; height: 75px;" src="../img/Elements/Ice.png" alt="">
+                            <img style="width: 70px; height: 68px; left: 135px; top: 5px;" src="../img/Path/The-Harmony.png" alt="">
+                            <img src="../img/Character/ruanmei.png" alt="ruanmei">
+                        </div>
+                        <div class="ihkam-details">
+                            <h2>Ruan Mei</h2><span>★★★★★</span><h3>Harmony</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <script>
+            filterSelection("all")
+            function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("ihkam-column");
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                    w3RemoveClass(x[i], "ihkam-show");
+                    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "ihkam-show");
+                }
+            }
+
+            function w3AddClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+                }
+            }
+
+            function w3RemoveClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                    while (arr1.indexOf(arr2[i]) > -1) {
+                        arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                    }
+                }
+                element.className = arr1.join(" ");
+            }
+
+
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("ihkam-BtnContainer");
+            var btns = btnContainer.getElementsByClassName("ihkam-btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function(){
+                    var current = document.getElementsByClassName("ihkam-active");
+                    current[0].className = current[0].className.replace(" ihkam-active", "");
+                    this.className += " ihkam-active";
+                });
+            }
+
+        </script>
+
+        <!-- footer -->
+        <footer>
+            <div class="ihkam_footer">
+                <div class="ihkam_footer-content">
+                    <a href="#" class="ihkam_logo">StarRail<span>Lab</span></a>
+                    <p>"Blindfold your eyes, they say,<br>
+                        that the approaching darkness may strike no fear in you.<br>
+                        Let it not burden your soul, nor numb your stride."<br>
+                    -IX</p>
+    
+                    <div class="ihkam_icon">
+                        <a href="#"><i class="bx bxl-instagram-alt"></i></a>
+                        <a href="#"><i class="bx bxl-facebook-square"></i></a>
+                        <a href="#"><i class="bx bxl-tiktok"></i></a>
+                        <a href="#"><i class="bx bxl-twitch"></i></a>
+                        <a href="#"><i class="bx bxl-twitter"></i></a>
+                    </div>
+                </div>
+
+                <div class="ihkam_footer-content">
+                    <h3>Comunity</h3>
+                    <a href="https://www.prydwen.gg/star-rail/"><h4>Prydwen</h4></a>
+                    <a href="https://wiki.hoyolab.com/pc/hsr/home"><h4>HoyoWiki</h4></a>
+                    <a href="https://honkai-star-rail.fandom.com/wiki/Honkai:_Star_Rail_Wiki"><h4>HSR Wiki</h4></a>
+                    <a href="https://genshinlab.com/honkai-star-rail-characters/"><h4>GenshinLab</h4></a>
+                    <a href="https://hsr.honeyhunterworld.com/?lang=ID"><h4>HoneyHunterWorld</h4></a>
+                    <a href="https://www.hoyolab.com/circles/6/42/feed?page_type=42&page_sort=hot"><h4>HoyoLab</h4></a>
+                </div>
+            </div><hr>
+            <div class="ihkam_copyright">
+                <h2>Copyright 2023 © Ihkam Mustaqim | MrkR</h2>
+            </div>
+        </footer>
+    </body>
+</html>

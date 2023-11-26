@@ -1,0 +1,987 @@
+@import url('https://fonts.googleapis.com/css/2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppons', sans-serif;
+}
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* Header */
+.ihkam_header2 {
+    display: flex;
+    margin-top: 73px;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/bg4.jpg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 260px;
+    color: white;
+    padding: 35px;
+}
+
+.ihkam_header3 {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 0;
+    border-style: solid;
+}
+/* end header */
+
+
+/* main */
+.ihkam_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ihkam_main {
+    flex: 100%;
+    padding: 18px;
+    background-color: rgba(0, 0, 0, 0.3);
+    justify-content: space-evenly;
+    color: white;
+}
+
+.ihkam_main a {
+    color: gold;
+    text-decoration: none;
+}
+
+.ihkam_main span {
+    color: gold;
+}
+.ihkam_main ul {
+    position: relative;
+    margin: 0 180px;
+}
+
+.ihkam_main img {
+    display: inline-flex;
+    text-align: center;
+    align-content: center;
+    justify-content: space-between;
+    height: 300px;
+    width: 600px;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.ihkam_main p {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+/* end main */
+
+/* footer */
+footer {
+    flex: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 245px;
+    box-sizing: border-box;
+    padding: 20px 5% 15px;
+    height: auto;
+}
+
+.ihkam_footer {
+    display: grid;
+    color: white;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 30px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.ihkam_footer-content a {
+    text-decoration: none;
+}
+
+.ihkam_footer-content h3 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 20px;
+    text-align: center;
+}
+
+.ihkam_footer-content h4 {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.ihkam_footer-content p {
+    color: white;
+    font: 16px;
+    line-height: 20px;
+    margin: 20px 0;
+}
+
+.ihkam_logo {
+    font-size: 33px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.ihkam_icon a {
+    display: inline-block;
+    font-size: 25px;
+    color: white;
+    margin-right: 20px;
+    transition: all .40s ease;
+}
+
+.ihkam_icon a:hover {
+    color: grey;
+    transform: translateY(-5px);
+}
+
+.ihkam_copyright {
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-size: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+/* end footer */
+
+
+/* filter btn */
+.ihkam-column {
+    float: left;
+    display: none;
+}
+
+.ihkam-lccolumn {
+    float: left;
+    display: none;
+}
+
+.ihkam-box::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.ihkam-lcbox::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.ihkam-show {
+    display: block;
+}
+
+
+/* style btn */
+.ihkam-btn {
+    width: 45px;
+    height: 45px;
+    display: inline-grid;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+.ihkam-btn:hover {
+    background-color: gray;
+}
+
+.ihkam-btn.ihkam-active {
+    background-color: #666;
+}
+/* end filter btn */
+
+/* card character*/
+.ihkam-box {
+    width: 1350px;
+    display: inline-grid;
+    grid-template-columns: repeat(5,100px);
+    grid-gap: 30px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+/* box karakter gold*/
+.ihkam-card {
+    position: relative;
+    width: 220px;
+    height: 280px;
+    background: linear-gradient(to top, rgba(205, 133, 63, 0.5), rgba(255, 215 , 0, 0.5), rgba(240, 230, 140, 0.5));
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+.ihkam-card::before,
+.ihkam-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(205, 133, 63, 0.5), rgba(255, 215 , 0, 0.5), rgba(240, 230, 140, 0.5));
+    border-radius: 4px;
+    transition: 0.5s;
+    z-index: -1;
+}   
+
+.ihkam-card:hover::before {
+    transform: rotate(20deg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.ihkam-card:hover::after {
+    transform: rotate(10deg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.ihkam-card .ihkam-imgBx {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    background: linear-gradient(to top, rgba(205, 133, 63, 1.0), rgba(255, 215 , 0, 0.9), rgba(240, 230, 140, ));
+    transition: 0.5s;
+    z-index: 1;
+}
+
+/* .ihkam-card:hover .ihkam-imgBx {
+    bottom: 80px;
+} */
+
+.ihkam-card .ihkam-imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ihkam-card .ihkam-details {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 70px;
+    text-align: center;
+}
+
+.ihkam-card .ihkam-details h2 h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 550;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.ihkam-card .ihkam-details h2 span {
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    display: block;
+    margin-top: -5px;
+}
+
+/* box character purple */
+.ihkam-card2 {
+    position: relative;
+    width: 220px;
+    height: 280px;
+    background: linear-gradient(to bottom, rgba(75 , 0, 130, 0.5), rgba(148, 0, 211, 0.5), rgba(186, 85, 211, 0.5));
+    margin: 0 auto;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+.ihkam-card2::before,
+.ihkam-card2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(75 , 0, 130, 0.5), rgba(148, 0, 211, 0.5), rgba(186, 85, 211, 0.5));
+    border-radius: 4px;
+    transition: 0.5s;
+    z-index: -1;
+}   
+
+.ihkam-card2:hover::before {
+    transform: rotate(20deg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.ihkam-card2:hover::after {
+    transform: rotate(10deg);
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+
+.ihkam-card2 .ihkam-imgBx2 {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    background: linear-gradient(to bottom, rgba(205, 133, 63, 1.0), rgba(255, 215 , 0, 0.9), rgba(240, 230, 140, ));
+    transition: 0.5s;
+    z-index: 1;
+}
+
+/* .ihkam-card:hover .ihkam-imgBx {
+    bottom: 80px;
+} */
+
+.ihkam-card2 .ihkam-imgBx2 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.ihkam-card2 .ihkam-details2 {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    height: 70px;
+    text-align: center;
+}
+
+.ihkam-card2 .ihkam-details2 h2 h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.ihkam-card2 .ihkam-details2 h2 span {
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    display: block;
+    margin-top: -5px;
+}
+/* end card character */
+
+/* card light cone */
+.ihkam-lcbox {
+    width: 1465px;
+    display: inline-grid;
+    grid-template-columns: repeat(5,240px);
+    grid-gap: 10px;
+    row-gap: 70px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+/* box LC gold*/
+.ihkam-lccard {
+    position: relative;
+    max-width: 220px;
+    height: 210px;
+    background: rgb(249, 195, 58, 0.7);
+    margin: 30px 10px;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.ihkam-lccard:hover {
+    height: 90%;
+}
+
+.ihkam-lcbox .ihkam-lccard .ihkam-lcimgBX {
+    position: relative;
+    width: 200px;
+    height: 260px;
+    top: -100px;
+    left: 10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.ihkam-lccard .ihkam-lcimgBX img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 15px;
+}
+
+.ihkam-lccard .ihkam-lcdetails {
+    position: relative;
+    margin-top: -100px;
+    padding: 5px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.ihkam-lccard:hover .ihkam-lcdetails {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -100px;
+    transition-delay: 0.3s;
+}
+
+.ihkam-lcdetails p {
+    font-size: 10px;
+    font-weight: 200;
+    color: white;
+}
+
+.ihkam-lcdetails img {
+    width: 50px;
+    height: 50px;
+    display: inline;
+    padding: 5px;
+}
+
+/* box LC purple */
+.ihkam-lccard2 {
+    position: relative;
+    max-width: 220px;
+    height: 210px;
+    background: rgba(148, 0, 211, 0.5);
+    margin: 30px 10px;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.ihkam-lccard2:hover {
+    height: 90%;
+}
+
+.ihkam-lccard2 .ihkam-lcimgBX {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    top: -100px;
+    left: 10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.ihkam-lccard2 .ihkam-lcimgBX img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 2px;
+}
+
+.ihkam-lccard2 .ihkam-lcdetails {
+    position: relative;
+    margin-top: -100px;
+    padding: 5px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.ihkam-lccard2:hover .ihkam-lcdetails {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -100px;
+    transition-delay: 0.3s;
+}
+
+/* box LC blue */
+.ihkam-lccard3 {
+    position: relative;
+    max-width: 220px;
+    height: 210px;
+    background: rgba(0, 191, 255, 0.5);
+    margin: 30px 10px;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.ihkam-lccard3:hover {
+    height: 90%;
+}
+
+.ihkam-lccard3 .ihkam-lcimgBX {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    top: -100px;
+    left: 10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.ihkam-lccard3 .ihkam-lcimgBX img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 2px;
+}
+
+.ihkam-lccard3 .ihkam-lcdetails {
+    position: relative;
+    margin-top: -100px;
+    padding: 5px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.ihkam-lccard3:hover .ihkam-lcdetails {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -100px;
+    transition-delay: 0.3s;
+}
+/* end card light cone */
+
+/* box relics */
+.ihkam-rbox {
+    width: 1460px;
+    display: inline-grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 15px;
+    row-gap: 30px;
+    margin: 0 auto;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+/* card relics */
+.ihkam-rcard {
+    position: relative;
+    width: 394px;
+    height: 223px;
+    background: linear-gradient(to bottom, rgba(0, 206, 209, 0.5), rgba(64, 224, 208, 0.5), rgba(0, 255, 255, 0.5));
+    border-radius: 10px;
+}
+
+.ihkam-rcard:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.ihkam-rcard .ihkam-rimgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 5px;
+    right: 5px;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.ihkam-rcard .ihkam-rimgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 150px;
+}
+
+.ihkam-rimgBx h2 {
+    position: absolute;
+    top: 20px;
+    left: 135px;
+    font-size: 15px;
+    font-weight: 200;
+    color: rgb(255,223,0);
+}
+
+.ihkam-rimgBx span {
+    position: absolute;
+    top: 40px;
+    left: 135px;
+    font-size: 13px;
+    font-weight: 100;
+    color: white;
+}
+
+.ihkam-set {
+    display: inline-grid;
+    margin: 45px 120px;
+    top: 40px;
+    left: 135px;
+    grid-template-columns: repeat(4, 30px);
+    grid-gap: 20px;
+}
+
+.ihkam-rimgBx .ihkam-set img {
+    position: relative;
+    column-gap: 10px;
+    height: 90px;
+    width: 90px;
+}
+
+.ihkam-rcard .ihkam-rdetail {
+    position: relative;
+    margin-top: 120px;
+    padding: 10px;
+}
+
+.ihkam-rdetail p {
+    font-size: 13px;
+    font-weight: 200;
+    color: white;
+}
+/* end card relic */
+
+/* aeon Description*/
+.ihkam-dbox {
+    margin: 15px;
+    width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(2, 640px);
+    gap: 30px;
+    row-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.ihkam-desc {
+    position: relative;
+    width: 640px;
+    height: 240px;
+    background: linear-gradient(to bottom, rgba(128, 128, 128, 0.5), rgba(192 ,192, 192, 0.2));
+}
+.ihkam-desc2 {
+    position: relative;
+    width: 640px;
+    height: 200px;
+    background: linear-gradient(to bottom, rgba(128, 128, 128, 0.5), rgba(192 ,192, 192, 0.2));
+}
+
+.ihkam-desc p {
+    margin: 15px 10px;
+    font-size: 16px;
+    font-weight: 100;
+}
+.ihkam-desc span {
+    font-size: 15px;
+    font-weight: 100;
+    margin-left: 460px;
+}
+.ihkam-desc2 p {
+    margin: 15px 10px;
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.ihkam-desc2 span {
+    font-size: 15px;
+    font-weight: 100;
+    margin-left: 420px;
+}
+/* end aeon Description */
+
+/* aeon box */
+.ihkam-abox {
+    width: 1450px;
+    display: inline-grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-gap: 15px;
+    row-gap: 30px;
+    margin: 0 auto;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+/* aeon card */
+.ihkam-acard {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: linear-gradient(to bottom, rgba(105, 105, 105, 0.8), rgba(169, 169, 169, 0.6), rgba(192 ,192, 192, 0.4));
+    border-radius: 10px;
+}
+
+.ihkam-acard .ihkam-aimgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    bottom: 5px;
+    right: 5px;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.ihkam-acard .ihkam-aimgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+}
+
+.ihkam-aimgBx span {
+    display: flex;
+    position: relative;
+    font-size: 22px;
+    font-weight: 300px;
+    color: white;
+    justify-content: center;
+    top: 380px;
+}
+
+.ihkam-acard .ihkam-adetail {
+    position: relative;
+    top: -90px;
+    padding: 10px;
+}
+
+.ihkam-adetail p {
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 100;
+    color: white;
+}
+
+.ihkam-acard .ihkam-apic {
+    position: relative;
+    margin-top: 375px;
+    left: 310px;
+}
+
+.ihkam-acard .ihkam-apic img {
+    width: 95px;
+    height: 95px;
+}
+/* end Aeon Box */
+
+/* form */
+.ihkam-fbox {
+    padding: 20px;
+    text-align: center;
+    margin: 0 400px;
+    background: rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    color: aqua;
+}
+
+.ihkam-fbox img {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    top: 35px;
+}
+
+.ihkam-fbox h3 {
+    top: -10px;
+    padding: 0;
+    color: white;
+}
+
+.ihkam-fbox span {
+    color: aqua;
+}
+
+.ihkam-fbox .ihkam-form {
+    position: relative;
+    padding: 15px 20px;
+    text-align: start;
+}
+
+label{
+    font-size: 20px;
+    font-weight: 500;
+    color: aqua;
+}
+
+input[type=text], input[type=email] {
+    width: 100%;
+    height: 30px;
+    padding: 12px 10px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea[type=message] {
+    width: 100%;
+    height: 120px;
+    padding: 12px 10px;
+    margin: 4px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+button {
+    width: 100%;
+    background-color: #00BFFF;
+    color: black;
+    padding: 10px 30px;
+    margin: 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #87CEFA;
+}
+
+
+/* responsive */
+@media screen and (max-width: 760px) {
+    .ihkam_header2, .ihkam_main {
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+    }
+
+    .ihkam_header2 {
+        height: 150px;
+        background-position: center;
+    }
+
+    .ihkam_main ul {
+        position: relative;
+        margin: 0 100px;
+    }
+
+    .ihkam_main img {
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+    }
+
+    .ihkam_main video{
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+    }
+
+    .ihkam-box {
+        width: 100%;
+        max-width: 430px;
+        height: auto;
+        grid-template-columns: repeat(2, 210px);
+        grid-gap: 20px;
+    }
+
+    .ihkam-lcbox {
+        display: inline-grid;
+        justify-content: space-evenly;
+        width: 100%;
+        max-width: 445px;
+        height: auto;
+        grid-template-columns: repeat(2, 240px);
+        row-gap: 65px;
+        column-gap: 5px;
+        text-align: center;
+    }
+    
+    .ihkam-lcdetails img {
+        width: 50px;
+        height: 50px;
+        padding: 5px;
+    }
+
+    .ihkam_footer {
+        display: flex;
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+    }
+    .ihkam_icon {
+        display: flex;
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+    }
+
+    .ihkam-rbox {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        grid-template-columns: repeat(1, 300px);
+        grid-gap: 20px;
+    }
+
+    .ihkam-abox {
+        display: grid;
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        grid-template-columns: repeat(1, 100px);
+        grid-gap: 20px;
+    }
+
+    .ihkam-dbox {
+        width: 100%;
+        max-width: 410px;
+        height: auto;
+        grid-template-columns: repeat(1, 440px);
+    }
+
+    .ihkam-desc, .ihkam-desc2 {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+    }
+
+    .ihkam-desc span {
+        margin-left: 290px;
+    }
+    .ihkam-desc2 span {
+        margin-left: 230px;
+    }
+
+    .ihkam-fbox {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        margin: 0 0;
+    }
+
+    .ihkam-fbox img {
+        width: 120px;
+        height: 120px;
+        top: 35px;
+    }
+}

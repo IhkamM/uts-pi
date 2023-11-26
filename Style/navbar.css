@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css/2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+
+
+/* Header */
+.ihkam_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.ihkam_header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(225, 225, 225, 0.15);
+    backdrop-filter: blur(50px);
+    z-index: -1;
+}
+
+span {
+    color: aqua;
+}
+
+.ihkam_name {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 520;
+}
+
+.ihkam_navbar a {
+    font-size: 1.15rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 1.5rem;
+    transition: .50s ease;
+}
+
+.ihkam_navbar a:hover {
+    color: aqua;
+    padding-right: 10px;
+}
+
+#ihkam_check {
+    display: none;
+}
+
+.ihkam_menu {
+    position: absolute;
+    right: 5%;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* responsive */
+@media (max-width: 992px) {
+    .ihkam_header {
+        padding: 1.3rem 5%;
+    }
+}
+
+@media (max-width: 760px) {
+    .ihkam_menu {
+        display: inline-flex;
+    }
+
+    #ihkam_check:checked~.ihkam_menu #ihkam_icon-menu {
+        display: none;
+    }
+
+    .ihkam_menu #ihkam_close-menu {
+        display: none;
+    }
+
+    #ihkam_check:checked~.ihkam_menu #ihkam_close-menu {
+        display: block;
+    }
+
+    .ihkam_navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(225, 225, 225, 0.15);
+        backdrop-filter: blur(50px);
+        overflow: hidden;
+        transition: .2s ease;
+    }
+
+    #ihkam_check:checked~.ihkam_navbar {
+        height: 18.8rem;
+    }
+
+    .ihkam_navbar a {
+        display: block;
+        font-size: 1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        transition: .2s ease;
+    }
+
+    #ihkam_check:checked~.ihkam_navbar a {
+        transform: translateY(0);
+    }
+}
