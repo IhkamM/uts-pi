@@ -870,11 +870,17 @@ button:hover {
 @media screen and (max-width: 760px) {
     .ihkam_header2, .ihkam_main {
         width: 100%;
-        max-width: 654px;
+        max-width: 357px;
         height: auto;
     }
 
     .ihkam_main {
+        width: 100%;
+        max-width: 654px;
+        height: auto;
+    }
+
+    .ihkam_header3 {
         width: 100%;
         max-width: 654px;
         height: auto;
@@ -931,7 +937,6 @@ button:hover {
     }
 
     .ihkam_footer {
-        display: flex;
         width: 100%;
         max-width: 550px;
         height: auto;
