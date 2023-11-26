@@ -210,11 +210,11 @@ footer {
 
 
 .ihkam-btn:hover {
-    background-color: gray;
+    background-color: #C0C0C0;
 }
 
 .ihkam-btn.ihkam-active {
-    background-color: #666;
+    background-color: #778899;
 }
 /* end filter btn */
 
