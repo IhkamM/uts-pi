@@ -115,14 +115,15 @@ footer {
     color: white;
     margin-bottom: 1.5rem;
     font-size: 20px;
-    text-align: center;
+    text-align: start;
 }
 
 .ihkam_footer-content h4 {
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
-    text-align: center;
+    text-align: start;
+    font-weight: 100;
 }
 
 .ihkam_footer-content p {
