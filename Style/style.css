@@ -1045,8 +1045,8 @@ button:hover {
         position: absolute;
         top: 0;
         left: 0;
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
     }
     
     .ihkam-aimgBx span {
@@ -1056,7 +1056,7 @@ button:hover {
         font-weight: 300px;
         color: white;
         justify-content: center;
-        top: 400px;
+        top: 380px;
     }
     
     .ihkam-acard .ihkam-adetail {
