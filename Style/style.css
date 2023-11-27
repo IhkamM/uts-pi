@@ -1022,6 +1022,12 @@ button:hover {
         grid-template-columns: repeat(1, 440px);
     }
 
+    .ihkam-acard {
+        width: 100%;
+        max-width: 440px;
+        height: auto;
+    }
+
     .ihkam-desc, .ihkam-desc2 {
         width: 100%;
         max-width: 404px;
