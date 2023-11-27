@@ -1075,6 +1075,7 @@ button:hover {
     .ihkam-acard .ihkam-apic {
         position: relative;
         margin-top: 150px;
+        top: 50px;
         left: 125px;
     }
     
