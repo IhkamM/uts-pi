@@ -1052,11 +1052,11 @@ button:hover {
     .ihkam-aimgBx span {
         display: flex;
         position: relative;
-        font-size: 22px;
+        font-size: 12px;
         font-weight: 300px;
         color: white;
         justify-content: center;
-        top: 380px;
+        top: 400px;
     }
     
     .ihkam-acard .ihkam-adetail {
