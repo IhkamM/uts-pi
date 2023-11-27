@@ -1021,6 +1021,11 @@ button:hover {
         height: auto;
     }
 
+    .ihkam-acard {
+        height: 400px;
+        width: 300px;
+    }
+
     .ihkam-dbox {
         width: 100%;
         max-width: 304px;
