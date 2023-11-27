@@ -1075,12 +1075,12 @@ button:hover {
     .ihkam-acard .ihkam-apic {
         position: relative;
         margin-top: 150px;
-        left: 150px;
+        left: 190px;
     }
     
     .ihkam-acard .ihkam-apic img {
-        width: 95px;
-        height: 95px;
+        width: 60px;
+        height: 60px;
     }
 
     .ihkam-dbox {
