@@ -1015,6 +1015,12 @@ button:hover {
         grid-gap: 20px;
     }
 
+    .ihkam-acard {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
     .ihkam-dbox {
         width: 100%;
         max-width: 304px;
