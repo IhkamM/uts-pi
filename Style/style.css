@@ -1017,7 +1017,7 @@ button:hover {
 
     .ihkam-dbox {
         width: 100%;
-        max-width: 654px;
+        max-width: 304px;
         height: auto;
         grid-template-columns: repeat(1, 440px);
     }
