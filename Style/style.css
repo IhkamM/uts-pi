@@ -1020,6 +1020,7 @@ button:hover {
         max-width: 304px;
         height: auto;
         grid-template-columns: repeat(1, 440px);
+        left: 100px;
     }
 
     .ihkam-desc, .ihkam-desc2 {
