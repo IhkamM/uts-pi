@@ -1061,7 +1061,7 @@ button:hover {
     
     .ihkam-acard .ihkam-adetail {
         position: relative;
-        top: auto;
+        top: -20px;
         padding: 10px;
     }
     
