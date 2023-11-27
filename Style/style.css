@@ -1061,7 +1061,7 @@ button:hover {
     
     .ihkam-acard .ihkam-adetail {
         position: relative;
-        top: -50px;
+        top: -20px;
         padding: 10px;
     }
     
@@ -1075,7 +1075,7 @@ button:hover {
     .ihkam-acard .ihkam-apic {
         position: relative;
         margin-top: 220px;
-        left: 145px;
+        left: 125px;
     }
     
     .ihkam-acard .ihkam-apic img {
