@@ -1019,7 +1019,7 @@ button:hover {
         width: 100%;
         max-width: 304px;
         height: auto;
-        left: 900px;
+        margin-left: 100px;
         grid-template-columns: repeat(1, 800px);
     }
 
