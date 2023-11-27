@@ -1013,7 +1013,7 @@ button:hover {
         height: auto;
         grid-template-columns: repeat(1, 100px);
         grid-gap: 20px;
-        left: 900px;
+        right: 900px;
     }
 
     .ihkam-dbox {
